@@ -24,7 +24,15 @@
 
 <body>
 	<a-scene>
+		<!-- <a-sphere color="yellow" radius="1" position="0 0 -5"></a-sphere>
+		<a-box color="red" position="2 0 -5" width="1"></a-box> -->
+		<a-assets>
+			<a-asset-item id="schwalbe" src="assets/schwalbe.gltf"></a-asset-item>
+		</a-assets>
 
+		<a-entity position="0 0 0">
+			<a-entity gltf-model="#schwalbe" position="-1 -.5 -4" scale=".01 .01 .01" rotation="-90 90 0"></a-entity>
+		</a-entity>
 		<!-- CAMERA -->
 		<a-camera camera position="0 0 0">
         </a-camera>
